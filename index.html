@@ -1067,5 +1067,134 @@
               card.style.transition = '';
           }, 500);
       });
-  
-</body></html></script></body></html>
+
+ <main class="min-h-[70vh] flex flex-col items-center justify-center p-8 text-center">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+                Bienvenue sur mon site
+            </h1>
+            <p class="text-xl text-slate-600 leading-relaxed">
+                Ceci est la section principale de votre page actuelle. Faites défiler vers le bas pour découvrir mes autres projets dans la section portfolio dédiée.
+            </p>
+            <div class="mt-10 animate-bounce">
+                <svg class="w-6 h-6 mx-auto text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </main>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS Loading -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .portfolio-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+       <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="bg-black py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <h2 class="text-sm font-semibold tracking-widest text-white-600 uppercase">Portfolio</h2>
+                    <h3 class="text-4xl font-bold mt-2 text-white mb-3">Featured Projects</h3>
+                </div>
+                <p class="!text-white-500 max-w-md">
+                    A selection of web projects crafted with passion, focusing on user experience and high performance.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              
+  <!-- Project 1 -->
+                <article class="portfolio-card group bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 flex flex-col h-full">
+                    <div class="aspect-video bg-slate-200 relative overflow-hidden">
+   <img src="images(1).png" 
+        alt="Project 1"
+        class="absolute inset-0 w-full h-full object-cover"
+    > 
+<div class="absolute inset-0 flex items-center justify-center text-slate-400 font-medium">
+                            <svg class="w-12 h-12 opacity-20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>                      
+ </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-xs font-bold text-yellow-500 uppercase tracking-wider mb-2">Landing Page</span>
+                        <h4 class="text-xl font-bold mb-3 group-hover:text-yellow-600 transition-colors">Neo Online coah</h4>
+                        <p class="text-slate-600 text-sm mb-6 flex-grow">A very modern landing page that focuses on conversion.</p>
+                        <a href="#" class="inline-flex items-center font-bold text-slate-900 hover:gap-2 transition-all">
+                            View Project 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="portfolio-card group bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 flex flex-col h-full">
+                    <div class="aspect-video bg-slate-200 relative overflow-hidden">
+<img src="images(2).png" 
+        alt="Project 1"
+        class="absolute inset-0 w-full h-full object-cover"
+    >                       
+ <div class="absolute inset-0 flex items-center justify-center text-slate-400 font-medium">
+                            <svg class="w-12 h-12 opacity-20" fill="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-xs font-bold text-black uppercase tracking-wider mb-2">Portfolio / Resume</span>
+                        <h4 class="text-xl font-bold mb-3 group-hover:text-black transition-colors">Juien Verne Photograph</h4>
+                        <p class="text-slate-600 text-sm mb-6 flex-grow">Minimalist websie showcasing a photograph's work. Everthing is turned on modernity and art.</p>
+                        <a href="#" class="inline-flex items-center font-bold text-slate-900 hover:gap-2 transition-all">
+                            View Project 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="portfolio-card group bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 flex flex-col h-full">
+                    <div class="aspect-video bg-slate-200 relative overflow-hidden">
+<img src="images(3).png" 
+        alt="Project 1"
+        class="absolute inset-0 w-full h-full object-cover"
+    >                       
+ <div class="absolute inset-0 flex items-center justify-center text-slate-400 font-medium">
+                            <svg class="w-12 h-12 opacity-20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-xs font-bold text-blue-500 uppercase tracking-wider mb-2">Landing Page</span>
+                        <h4 class="text-xl font-bold mb-3 group-hover:text-blue-600 transition-colors">Marc Coach</h4>
+                        <p class="text-slate-600 text-sm mb-6 flex-grow">A conversion-based website with SEO optimisation </p>
+                        <a href="#" class="inline-flex items-center font-bold text-slate-900 hover:gap-2 transition-all">
+                            View Project 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+</body>
+   </body></html></script></body></html>
